@@ -3,12 +3,6 @@ package com.harsha.dto;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-
-@Component
 public class MessageDto {
 
 	private String broker;
