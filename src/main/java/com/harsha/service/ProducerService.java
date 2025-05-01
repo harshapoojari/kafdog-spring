@@ -21,6 +21,7 @@ public class ProducerService {
 			ProducerRecord<String, String> record=new ProducerRecord<String, String>(topic, message);
 			producer.send(record);
 			producer.flush();
+			System.out.println("Message sent");
 			return "Message sent to broker" + broker + " on topic " + topic;
 			
 		}catch (Exception e) {
